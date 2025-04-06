@@ -1,3 +1,122 @@
-div {
-    background-color: aqua;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* --- NAVBAR --- */
+
+.navbar {
+    display: grid;
+    background-color: rgb(245, 245, 245);
+    grid-template-areas:
+    'vazio logo vazio2 itens'
+    ;
+    grid-template-columns: 0.5fr 1fr 3fr 5fr;
+    grid-template-rows: 103.8px;
+    align-items: center;
+}
+
+.logo {
+    display: grid;
+    grid-area: logo;
+    justify-items: center;
+    align-items: center;
+    color: #c4847d;
+    margin: 10px;
+}
+
+.img-logo{
+    height: 57.3px;
+    width: 97.9px;
+}
+
+.itens-nav-bar {
+    grid-area: itens;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+.item-navbar {
+    padding: 10px 20px;
+    color: black;
+}
+
+
+.button-agendar{
+    height: 52.4px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #f5a676;
+    color: white;
+    border: none;
+}
+
+/* --- HERO SECTION --- */
+
+.ctr1{
+    display: grid;
+    width: 100%;
+    height: 89%;
+    grid-template-areas:
+    'textos imgs'
+    ;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    background: radial-gradient(circle, #f5a676, #f5a676, #ddd8d5);
+    justify-items:   center;
+}
+
+.texts-home-pg1 {
+    grid-area: textos;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 50px;
+    padding: 60px;
+    width: 636.7px;
+}
+
+.titulo-pg1 {
+    font-family: 'Spectral', serif;
+    font-weight: 300; 
+    color: #b2645b;
+    font-size: 45px;
+}
+
+.sub-titulo-pg1{
+    align-self: end;
+    color: #b2645b;
+}
+
+.bt-saiba-mais {
+    background-color: #fbefe3;
+    width: 114px;
+    height: 35.7px;
+    border-radius: 5px;
+    border: none;
+}
+
+.img1-home {
+    grid-area: imgs;
+    height: 80%;
+    width: 70%;
+    border-radius:50%;
+    padding: 5%;
+    align-self: center;
 }
