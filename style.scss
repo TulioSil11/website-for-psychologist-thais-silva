@@ -65,7 +65,7 @@ button {
 
 
 .button-agendar{
-    height: 52.4px;
+    height: 52.4px; 
     width: 120px;
     border-radius: 10px;
     background-color: #f5a676;
@@ -180,7 +180,7 @@ main {
 }
 
 .pg3 {
-    background-color: #fbefe3;
+    background-color: #f8e8d8;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -246,5 +246,53 @@ main {
         text-align: center;
         font-size: 15px;
         font-family: 'Questrial', sans-serif;
+    }
+}
+
+.pg4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 200px;
+    background-color: #f5a676;
+
+    img{
+        width: 380px;
+        height: 400px;
+        border-radius:50%;
+    }
+
+    h1{
+        font-size: 50px;
+        font-weight: 300;
+        width: 600px;
+        padding-left: 50px;
+    }
+}
+
+.pg4-contatos {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1f 1fr 1fr;
+    justify-items: center;
+    padding:100px;
+
+    h3{
+        padding-bottom: 10px;
+    }
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: center;
+    padding-bottom: 10px;
+    img{
+        width: 31.4px;
+        height: 25.6px;
+        border-radius:0%;
     }
 }
