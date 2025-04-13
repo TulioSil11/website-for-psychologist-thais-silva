@@ -64,13 +64,17 @@ button {
 }
 
 
-.button-agendar{
+.item-agendar{
     height: 52.4px; 
     width: 120px;
     border-radius: 10px;
     background-color: #f5a676;
     color: white;
     border: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --- HERO SECTION --- */
@@ -148,7 +152,7 @@ main {
 
 .pg2-texts {
     width: 507.8px;
-    height: 344.p5x;
+    height: 344.5px;
     align-self: center;
     justify-self: center;
     color: #36454f;
@@ -167,15 +171,17 @@ main {
 .pg2-imgs{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1f 1f;
+    grid-template-rows: 1fr 1f;
     justify-items:   center;
     align-items: center;
+    padding-top: 100px;
+    gap: 100px;
     
     img{
-        width: 60%;
-        height: 60%;
+        width: 250px;
+        height: 250px;
         border-radius:50%;
-        padding: 10%;
+        padding: 5%;
     }
 }
 
@@ -252,11 +258,11 @@ main {
 .pg4{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 80% 20%;
     align-items: center;
     justify-items: center;
-    padding-top: 200px;
     background-color: #f5a676;
+    padding-top: 100px;
 
     img{
         width: 380px;
@@ -276,9 +282,9 @@ main {
     justify-self: start;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1f 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
-    padding:100px;
+    padding-left: 50px;
 
     h3{
         padding-bottom: 10px;
@@ -289,10 +295,143 @@ main {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 10px;
     img{
         width: 31.4px;
         height: 25.6px;
         border-radius:0%;
+    }
+}
+
+/* Agendamento*/
+.pg5{
+    background-color: #f5a676;
+}
+
+.tabela-agendamento{
+    display: grid;
+    height: 70%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    padding: 5%;
+}
+
+.horarios-dia{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    row-gap: 15px;
+}
+
+.dia-da-semana {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffce9c;
+    width: 196.6px;
+    height: 72.2px;
+    border-radius: 20px;
+    color: #c17c74;
+}
+
+.horario{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #fbefe3;
+    width: 150px;
+    height: 197px;
+    padding: 25px;
+    border-radius: 20px;
+    align-items: center;
+    justify-items:center;
+}
+
+.agendamento {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+    width: 160px;
+    height: 30px;
+}
+
+.agendamento-disponivel {
+    background-color: #91cda5;
+}
+
+.agendamento-indisponivel {
+    background-color: #c8726f;
+    pointer-events: none; 
+    color: rgb(47, 44, 44); 
+    text-decoration: none;
+}
+
+/*Form de agendamento*/
+.pg6 {
+    background-color: #f5a676;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.form-agendar {
+    background-color: #fbefe3;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 300px;
+    padding: 40px 30px;
+
+    .field {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+
+    input {
+        border-radius: 20px;
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+    a {
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 200px;
+        height: 50px;
+        background-color: #f5a676;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.mensagem-sucesso {
+    background-color: #fbefe3;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #2f4f4f;
+    font-family: Arial, sans-serif;
+    margin: 2rem auto;
+    text-align: center;
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: normal;
     }
 }
