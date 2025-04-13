@@ -1,9 +1,10 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,17 +19,13 @@ button {
 }
 
 /* --- NAVBAR --- */
-
 .navbar {
     display: grid;
     background-color: rgb(245, 245, 245);
-    grid-template-areas:
-    'vazio logo vazio2 itens'
-    ;
+    grid-template-areas: 'vazio logo vazio2 itens';
     grid-template-columns: 0.5fr 1fr 3fr 5fr;
     grid-template-rows: 103.8px;
     align-items: center;
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -44,7 +41,7 @@ button {
     margin: 10px;
 }
 
-.img-logo{
+.img-logo {
     height: 57.3px;
     width: 97.9px;
 }
@@ -57,28 +54,24 @@ button {
     align-items: center;
 }
 
-
 .item-navbar {
     padding: 10px 20px;
     color: black;
 }
 
-
-.item-agendar{
-    height: 52.4px; 
+.item-agendar {
+    height: 52.4px;
     width: 120px;
     border-radius: 10px;
     background-color: #f5a676;
     color: white;
     border: none;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
 /* --- HERO SECTION --- */
-
 main {
     display: grid;
     width: 100%;
@@ -87,17 +80,14 @@ main {
     grid-template-rows: repeat(4, 100%);
 }
 
-
-.pg1{
+.pg1 {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-areas:
-    'textos imgs'
-    ;
+    grid-template-areas: 'textos imgs';
     column-gap: 10px;
     background: radial-gradient(circle, #f5a676, #f5a676, #ddd8d5);
-    justify-items:  center;
+    justify-items: center;
     padding-top: 3%;
 }
 
@@ -108,46 +98,44 @@ main {
     row-gap: 50px;
     padding: 60px;
     width: 636.7px;
-
-    h1{
-        font-family: 'Spectral', serif;
-        font-weight: 300; 
-        color: #b2645b;
-        font-size: 45px;
-    }
-
-    h2{
-        align-self: end;
-        color: #b2645b;
-    }
-
-    button{
-        background-color: #fbefe3;
-        width: 114px;
-        height: 35.7px;
-        border-radius: 5px;
-        border: none;
-    }
 }
 
+.pg1-texts h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 300;
+    color: #b2645b;
+    font-size: 45px;
+}
+
+.pg1-texts h2 {
+    align-self: end;
+    color: #b2645b;
+}
+
+.pg1-texts button {
+    background-color: #fbefe3;
+    width: 114px;
+    height: 35.7px;
+    border-radius: 5px;
+    border: none;
+}
 
 .img1-home {
     grid-area: imgs;
     height: 70%;
     width: 70%;
-    border-radius:50%;
+    border-radius: 50%;
     align-self: center;
 }
 
-
-.pg2{
+.pg2 {
     background-color: #f5a676;
     display: grid;
     width: 100%;
     height: 100%;
     grid-template-columns: 50% 50%;
     column-gap: 10px;
-    justify-items:   center;
+    justify-items: center;
 }
 
 .pg2-texts {
@@ -156,33 +144,33 @@ main {
     align-self: center;
     justify-self: center;
     color: #36454f;
-
-    h1{
-        font-weight: 300; 
-        font-size: 30px;
-        padding-bottom: 30px;
-    }
-    p{
-        font-size: 17px;
-    }
 }
 
+.pg2-texts h1 {
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
 
-.pg2-imgs{
+.pg2-texts p {
+    font-size: 17px;
+}
+
+.pg2-imgs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1f;
-    justify-items:   center;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
     align-items: center;
     padding-top: 100px;
     gap: 100px;
-    
-    img{
-        width: 250px;
-        height: 250px;
-        border-radius:50%;
-        padding: 5%;
-    }
+}
+
+.pg2-imgs img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 5%;
 }
 
 .pg3 {
@@ -191,22 +179,22 @@ main {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-
-    h1 {
-        font-size: 45px;
-        font-weight: 300;
-        align-self: end;
-    }
-
-    button {
-        background-color: #36454f;
-        color: white;
-        width: 114px;
-        height: 35.7px;
-    }
 }
 
-.pg3-atividades{
+.pg3 h1 {
+    font-size: 45px;
+    font-weight: 300;
+    align-self: end;
+}
+
+.pg3 button {
+    background-color: #36454f;
+    color: white;
+    width: 114px;
+    height: 35.7px;
+}
+
+.pg3-atividades {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -215,47 +203,46 @@ main {
     gap: 70px;
 }
 
-.atividade-fundo{
+.atividade-fundo {
     background-color: #c17c74;
     width: 100px;
     height: 100px;
-    border-radius:50%;
-
+    border-radius: 50%;
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
-.atividade{
+.atividade {
     width: 220px;
     height: 346.6px;
     display: grid;
     align-items: center;
     justify-items: center;
-
-    img{
-        width: 70px;
-        height: 70px;
-        border-radius:50%;
-        padding: 10%;
-    }
-
-    h2{
-        text-align: center;
-        font-weight: 300;
-        height: 120px;
-        font-size: 24px;
-    }
-
-    p{
-        font-weight: 300;
-        text-align: center;
-        font-size: 15px;
-        font-family: 'Questrial', sans-serif;
-    }
 }
 
-.pg4{
+.atividade img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10%;
+}
+
+.atividade h2 {
+    text-align: center;
+    font-weight: 300;
+    height: 120px;
+    font-size: 24px;
+}
+
+.atividade p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.pg4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80% 20%;
@@ -263,19 +250,19 @@ main {
     justify-items: center;
     background-color: #f5a676;
     padding-top: 100px;
+}
 
-    img{
-        width: 380px;
-        height: 400px;
-        border-radius:50%;
-    }
+.pg4 img {
+    width: 380px;
+    height: 400px;
+    border-radius: 50%;
+}
 
-    h1{
-        font-size: 50px;
-        font-weight: 300;
-        width: 600px;
-        padding-left: 50px;
-    }
+.pg4 h1 {
+    font-size: 50px;
+    font-weight: 300;
+    width: 600px;
+    padding-left: 50px;
 }
 
 .pg4-contatos {
@@ -285,10 +272,10 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
     padding-left: 50px;
+}
 
-    h3{
-        padding-bottom: 10px;
-    }
+.pg4-contatos h3 {
+    padding-bottom: 10px;
 }
 
 .contato {
@@ -296,19 +283,20 @@ main {
     grid-template-columns: 1fr 2.5fr;
     align-items: center;
     padding: 10px;
-    img{
-        width: 31.4px;
-        height: 25.6px;
-        border-radius:0%;
-    }
 }
 
-/* Agendamento*/
-.pg5{
+.contato img {
+    width: 31.4px;
+    height: 25.6px;
+    border-radius: 0%;
+}
+
+/* Agendamento */
+.pg5 {
     background-color: #f5a676;
 }
 
-.tabela-agendamento{
+.tabela-agendamento {
     display: grid;
     height: 70%;
     grid-template-columns: repeat(5, 1fr);
@@ -316,7 +304,7 @@ main {
     padding: 5%;
 }
 
-.horarios-dia{
+.horarios-dia {
     display: grid;
     align-items: center;
     justify-items: center;
@@ -336,7 +324,7 @@ main {
     color: #c17c74;
 }
 
-.horario{
+.horario {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -346,7 +334,7 @@ main {
     padding: 25px;
     border-radius: 20px;
     align-items: center;
-    justify-items:center;
+    justify-items: center;
 }
 
 .agendamento {
@@ -364,18 +352,19 @@ main {
 
 .agendamento-indisponivel {
     background-color: #c8726f;
-    pointer-events: none; 
-    color: rgb(47, 44, 44); 
+    pointer-events: none;
+    color: rgb(47, 44, 44);
     text-decoration: none;
 }
 
-/*Form de agendamento*/
+/* Formulário de agendamento */
 .pg6 {
     background-color: #f5a676;
     display: grid;
     align-items: center;
     justify-items: center;
 }
+
 .form-agendar {
     background-color: #fbefe3;
     border-radius: 20px;
@@ -384,33 +373,33 @@ main {
     row-gap: 20px;
     width: 300px;
     padding: 40px 30px;
+}
 
-    .field {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 5px;
-    }
+.form-agendar input {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
 
-    input {
-        border-radius: 20px;
-        width: 100%;
-        height: 40px;
-        padding-left: 10px;
-    }
+.form-agendar a {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #f5a676;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 
-    a {
-        justify-self: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        width: 200px;
-        height: 50px;
-        background-color: #f5a676;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-    }
+.field {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
 }
 
 .mensagem-sucesso {
@@ -424,14 +413,14 @@ main {
     font-family: Arial, sans-serif;
     margin: 2rem auto;
     text-align: center;
+}
 
-    h2 {
-        font-size: 22px;
-        margin-bottom: 1rem;
-    }
+.mensagem-sucesso h2 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
 
-    h3 {
-        font-size: 18px;
-        font-weight: normal;
-    }
+.mensagem-sucesso h3 {
+    font-size: 18px;
+    font-weight: normal;
 }
